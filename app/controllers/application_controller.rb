@@ -1,4 +1,5 @@
 class ApplicationController < Sinatra::Base
+# where the application configurations, routes, and controller actions are implemented
 
   configure do
   	set :views, "app/views"
