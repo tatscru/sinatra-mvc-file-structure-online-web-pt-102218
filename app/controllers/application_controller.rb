@@ -4,9 +4,11 @@ class ApplicationController < Sinatra::Base
   configure do
   	set :views, "app/views"
   	set :public_dir, "public"
+  # 	tells the controller where to look to find views (HTML)+ public dir. 
   end
 
   get "/" do
   	erb :index
+  # 	sets an action that receives + responds with appropriate HTML
   end
 end
